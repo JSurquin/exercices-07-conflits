@@ -4,14 +4,15 @@ Ce dépôt contient `index.html` et `style.css` pour pratiquer la résolution de
 
 ## Tâches
 
-1. Sur `main` : modifier `index.html` (le `<h1>` ou le `<p>`), commiter
-2. Créer une branche `feature/update-home`
-3. Dans cette branche, modifier **la même zone** dans `index.html` (version différente)
-4. Commiter sur `feature/update-home`
-5. Revenir sur `main` et lancer `git merge feature/update-home` → **conflit !**
-6. Repérer les marqueurs `<<<<<<<`, `=======`, `>>>>>>>`
-7. Résoudre manuellement, `git add index.html`, finaliser le merge
-8. Vérifier l'historique et supprimer la branche
+1. Sur `main` : sans commiter
+2. Créer une branche `feature/update-home` modifier `index.html` (le `<h1>` ou le `<p>`), et comittez
+3. Commiter sur `feature/update-home`
+4. Revenez sur main
+5. Créer une branche `feature/update-home2` basé sur main modifier `index.html` (le `<h1>` ou le `<p>`), et comittez
+6. Revenir sur `main` et lancer `git merge feature/update-home` → ok puis update-home2 **conflit** !
+7. Repérer les marqueurs `<<<<<<<`, `=======`, `>>>>>>>`
+8. Résoudre manuellement, `git add index.html`, finaliser le merge
+9. Vérifier l'historique et supprimer la branche
 
 ## Astuce : identifier un conflit
 
